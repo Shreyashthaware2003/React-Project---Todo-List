@@ -81,7 +81,7 @@ function App() {
         <div className="addTodo my-5 flex flex-col gap-2">
           <h2 className='text-lg font-bold m-2'>Add a Todo</h2>
           <div className="flex ">
-            <input onChange={handleChange} value={todo} type="text" className='w-full rounded-lg py-1 px-5' />
+            <input onChange={handleChange} value={todo} type="text" className='w-full rounded-lg py-1 px-5' placeholder='Enter upto 4 letters atleast...' />
             <button onClick={handleAdd} disabled={todo.length <= 3} className='bg-violet-800 hover:bg-violet-950 px-2 py-1 text-sm font-bold text-white rounded-md disabled:bg-violet-700 mx-2 cursor-pointer '>Save</button>
           </div>
         </div>
